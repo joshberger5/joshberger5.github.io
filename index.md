@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Josh Berger
 layout: home
 ---
 
