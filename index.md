@@ -3,7 +3,6 @@ title: Josh Berger
 layout: minimal
 ---
 
-# [Temptare]
+[Temptare]
 
-----
-[Temptare] https://joshberger5.github.io/Temptare
+[Temptare]: https://joshberger5.github.io/Temptare
