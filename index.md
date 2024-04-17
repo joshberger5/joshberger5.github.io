@@ -1,4 +1,4 @@
 ---
 title: Josh Berger
-layout: home
+layout: minimal
 ---
