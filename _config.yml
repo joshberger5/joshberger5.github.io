@@ -1,2 +1,12 @@
 title: Josh Berger
-theme: just-the-docs
+description: Backend Software Engineer & Game Developer
+url: "https://joshberger5.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
