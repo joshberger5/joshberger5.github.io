@@ -18,16 +18,39 @@
 }
 
 /* ============================================================
-   Animated Background Canvas
+   Hero Video Background
    ============================================================ */
-#bg-canvas {
-  position: fixed;
+.hero__video-bg {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
+  overflow: hidden;
   pointer-events: none;
+}
+
+/* Scale the iframe so it covers the hero like object-fit: cover */
+.hero__video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 16:9 cover: make it wider than the container */
+  width: 177.78vh; /* 100vh * 16/9 */
+  height: 56.25vw; /* 100vw * 9/16 */
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  pointer-events: none;
+}
+
+/* Dark overlay so content stays readable */
+.hero__video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 23, 0.5);
 }
 
 /* ============================================================
@@ -235,8 +258,15 @@ section {
    Hero
    ============================================================ */
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: 100px 0 80px;
   text-align: center;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__photo {
@@ -267,7 +297,7 @@ section {
 
 .hero__tagline {
   font-size: 1rem;
-  color: var(--muted);
+  color: #adbac7;
   font-style: italic;
   margin-bottom: 40px;
 }
