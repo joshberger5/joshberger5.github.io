@@ -4,7 +4,7 @@
   var VIDEOS = [
     'LSPuJ9ggVcA', // Skyrim Special Edition gameplay — Bethesda Softworks
     '4igb7__IrfA', // MW2 campaign gameplay — GameSpot
-    'P821gYMxGiQ'  // FIFA 16 Real Madrid vs Chelsea — Fifizlo
+    'PsOPKZU5ZAA'  // FIFA 16 Gamescom gameplay — PS360HD
   ];
 
   var id = VIDEOS[Math.floor(Math.random() * VIDEOS.length)];
