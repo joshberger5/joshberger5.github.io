@@ -7,7 +7,10 @@
     'PsOPKZU5ZAA'  // FIFA 16 Gamescom gameplay — PS360HD
   ];
 
-  var id = VIDEOS[Math.floor(Math.random() * VIDEOS.length)];
+  var KEY = 'hero_video_index';
+  var next = (parseInt(localStorage.getItem(KEY) || '0', 10) + 1) % VIDEOS.length;
+  localStorage.setItem(KEY, next);
+  var id = VIDEOS[next];
 
   var iframe = document.getElementById('hero-iframe');
   if (!iframe) return;
